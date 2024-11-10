@@ -3,7 +3,7 @@
 
         <head>
             <meta charset="utf-8">
-            <title>suanpan Academy | Akurdi</title>
+            <title>suanpan academy</title>
             <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
             <link href="{% static 'img/LOGO.png' %}" rel="icon">
@@ -15,6 +15,7 @@
 
             <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
             <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+            <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
 
         </head>
@@ -33,7 +34,7 @@
                     <div class="col-lg-9">
                         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                             <a href="" class="text-decoration-none d-block d-lg-none">
-                                <h1 class="m-0"><span class="text-primary">s🧮</span>anpan</h1>
+                                <h1 class="m-0"><span class="text-primary">suan</span>pan</h1>
                             </a>
                             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                                 <span class="navbar-toggler-icon"></span>
@@ -64,14 +65,10 @@
                                     <a href="contact" class="nav-item nav-link">Contact</a>
 
                       
-                            <a class="nav-link" href="logout">Logout</a>
-                            <a class="nav-link" href="login">Login</a>
+                        
                                 </div>
 
-                                <form class="d-flex" method="get" action="/search">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
-                                    <button class="btn btn-primary" type="submit">Search</button>
-                                  </form>
+                               
 
                             </div>
                         </nav>
@@ -199,8 +196,7 @@
 </div>
 
 <!-- About End -->
-{% if user.is_authenticated %}
-{% else %}
+
 
 <!-- Registration Start -->
     <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
